@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the document. UTF-8 is widely used and compatible with most characters. -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design: sets the viewport to scale content properly on mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title, shown in the browser tab and used by search engines for indexing. -->
+    <title>Page Title Here</title>
+
+    <!-- Link to external CSS file for styling. Use a relative path or URL to your stylesheet. -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon for the page, displayed in the browser tab. Replace 'favicon.ico' with your own icon file. -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- HEADER: Contains branding, navigation links, or page title. Should be inside <body>. -->
+    <header>
+        <h1>Website Title or Logo</h1>
+        
+        <!-- NAVIGATION: Navigation links should be placed in a <nav> element for accessibility. -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT: The core content of the page, should only be one <main> per page. -->
+    <main>
+        <h2>Page Heading</h2>
+
+        <!-- Example of a search bar that users can use to filter or search through content. -->
+        <div class="search-bar">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Type to search...">
+        </div>
+
+        <!-- MAIN ARTICLE or CONTENT SECTION: Can use <section> for logical grouping of content. -->
+        <section>
+            <h3>Section Heading</h3>
+            <p>This is the main content area where you place articles, images, tables, or other primary content.</p>
+
+            <!-- Example Table: Only use tables for tabular data, not for layout purposes. -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- SIDEBAR or ASIDE: For related content, like links or additional information. -->
+    <aside>
+        <h4>Related Links</h4>
+        <ul>
+            <li><a href="#link1">Related Link 1</a></li>
+            <li><a href="#link2">Related Link 2</a></li>
+        </ul>
+    </aside>
+
+    <!-- FOOTER: Contains copyright info, additional navigation, or contact information. -->
+    <footer>
+        <p>&copy; 2023 Your Website Name</p>
+        <!-- Secondary navigation, often with smaller links, is okay here. -->
+        <nav>
+            <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- JavaScript files are loaded at the end of <body> to avoid blocking page rendering. -->
+    <script src="script.js"></script>
+</body>
+</html>
