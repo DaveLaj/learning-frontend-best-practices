@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>    
+            <h1 id="main-heading">I am the HEAD!!!</h1>
+        </header>
+        <main>
+            <div class="main-class">
+                <p>This is the main class paragraph.</p>
+            </div>
+            <div class="to-remove" id="button">
+                <div class="class1">Class 1</div>
+                <div class="class2">Class 2</div>
+            </div>
+        </main>
+    </body>
+
+    <script>
+        // Get element by ID
+        const mainHeading = document.getElementById('main-heading');
+        console.log(mainHeading);
+
+        // Get element by class name
+        const mainClass = document.getElementsByClassName('main-class');
+        console.log(mainClass[0]);
+
+        // Mutate the innerText property
+        mainHeading.innerText = "I am still the HEAD!!!";
+
+        // InnerHTML manipulation
+        mainClass[0].innerHTML = "<strong>Reborn anew</strong>";
+
+        // Style Manipulation
+        mainHeading.style.color = "red";
+        mainHeading.style.fontSize = "5em";
+        document.getElementById('button').style.backgroundColor = "blue";
+
+        // Remove class tag manipulation
+        const toRemove = document.getElementsByClassName('to-remove');
+        toRemove[0].classList.add('to-add');
+        toRemove[0].classList.remove('to-remove');
+
+        // It is now undefined
+        console.log(toRemove[0]);
+
+        // create an entirely new element
+        const newDiv = document.createElement('div');
+        newDiv.innerHTML = '<p>Made in JavaScript.</p>';
+        newDiv.classList.add('new-class');
+        mainClass[0].appendChild(newDiv);
+
+        // Remove an element
+        const toAdd = document.getElementsByClassName('to-add')[0];
+
+        // remove and element using its parent
+        toAdd.removeChild(document.getElementsByClassName('class1')[0]);
+
+        // alternatve way to remove an element using itself
+        // document.getElementsByClassName('class1')[0].remove();
+
+        // add event
+        toAdd.addEventListener('click', () => {
+            alert('Clicked!');
+        });
+    </script>
+</html>
